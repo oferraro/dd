@@ -1,0 +1,48 @@
+@import 'variables.scss';
+
+body {
+  background-color: $primaryBackgroundColor;
+}
+
+.capitalized {
+  text-transform: capitalize;
+}
+
+.navigation-buttons {
+  a {
+    margin-left: 20px; display: inline-block; color: $linkColor;
+  }
+}
+.Users {
+  .profile-pic {
+    width: 50px; border-radius: 50px; margin-right: 10px;
+  }
+  .users-list {
+    list-style: none;
+    a {
+      color: $linkColor; margin: 10px 0; display: block;
+    }
+  }
+}
+.addUser {
+  .main-box {
+    padding: 20px; border: 2px solid $bordersColor; margin-left: 20px; 
+  }
+}
+.User {
+  margin: 20px 0 0 20px; border: 2px solid $bordersColor; max-width: 500px;
+  padding: 5px;
+  p { margin: 0; }
+  img.profile-pic {
+    display: inline-block; padding: 0 5px; vertical-align: top;
+  }
+  .actions {
+    display: block; border: 1px dotted $bordersColor; margin: 5px 0; text-align: center;
+    a {
+      padding: 0 10px; font-weight: bold; color: $linkColor;
+    }
+  }
+  .contact-info { display: inline-block; margin-left: 20px; }
+  .extra-info { display: block; }
+  img { border-radius: 50px; display: inline-block; }
+}
